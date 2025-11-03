@@ -5,41 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Shea Blog</title>
   <style>
-    html, body { margin: 0; padding: 0; background: #f4f1ea; color: #222; font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.7; }
+    html, body { margin: 0; padding: 0; background: #f4f1ea; color: #222; font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.7; }
     a { color: #06c; text-decoration: underline; }
     a:visited { color: #551a8b; }
     .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
     header { border: 1px solid #c9c3b8; background: #fffefa; padding: 24px; margin-bottom: 20px; }
-    .brand { padding: 4px 0 12px; }
     .site-title { font-size: 32px; margin: 0 0 6px; }
     nav { padding: 12px 0; border-top: 1px solid #e0dbcf; }
-    nav button.tab { appearance: none; border: 0; background: transparent; padding: 10px 12px; margin: 0 8px 0 0; font: inherit; color: #06c; text-decoration: underline; cursor: pointer; }
-    nav [aria-selected="true"] { color: #111; text-decoration: none; }
+    nav button.tab { border: 0; background: transparent; padding: 10px 12px; margin-right: 8px; font: inherit; color: #06c; text-decoration: underline; cursor: pointer; }
+    nav [aria-selected='true'] { color: #111; text-decoration: none; }
     main { background: #fff; border: 1px solid #d9d2c4; padding: 32px; margin-top: 20px; }
     .card { background:#fff; border: 1px solid #e6dfd2; padding: 32px; margin: 22px 0; }
-    article h2, h2 { font-size: 22px; margin: 12px 0 8px; }
-    article h2:first-child { margin-top: 0; }
+    article h2 { font-size: 22px; margin-top: 0; }
     p { margin: 16px 0; }
-    ul { padding-left: 24px; margin: 12px 0; }
-    .meta, .byline, .small { color: #555; font-size: 14px; }
     footer { border: 1px solid #c9c3b8; padding: 16px 20px; color: #555; background: #fffefa; margin-top: 20px; }
-    [role="tabpanel"] { opacity: 0; visibility: hidden; height: 0; overflow: hidden; transition: opacity .3s ease, transform .3s ease; transform: translateY(6px); }
-    [role="tabpanel"].active { opacity: 1; visibility: visible; height: auto; overflow: visible; transform: translateY(0); }
-    .works li { margin-bottom: 10px; }
+    [role='tabpanel'] { opacity: 0; visibility: hidden; height: 0; overflow: hidden; transition: opacity .3s ease, transform .3s ease; transform: translateY(6px); }
+    [role='tabpanel'].active { opacity: 1; visibility: visible; height: auto; overflow: visible; transform: translateY(0); }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">
-        <div>
-          <h1 class="site-title">The Shea Blog</h1>
-          <div class="small">An ENC 1102 research blog on technology and human connection</div>
-        </div>
-      </div>
+      <h1 class="site-title">The Shea Blog</h1>
+      <div class="small">An ENC 1102 research blog on technology and human connection</div>
       <nav role="tablist" aria-label="Site tabs">
         <button class="tab" role="tab" aria-selected="true" aria-controls="home" id="tab-home">Home</button>
-        <!-- Reordered: Works Cited before Reflection; About removed -->
         <button class="tab" role="tab" aria-selected="false" aria-controls="works" id="tab-works">Works Cited</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="reflection" id="tab-reflection">Reflection</button>
       </nav>
@@ -51,25 +41,24 @@
           <article>
             <h2>How reliance on AI shapes human connection (Draft 1)</h2>
             <div class="meta">By Brennan Shea. November 3, 2025.</div>
-            <p>I use artificial intelligence every day. It helps me draft emails, plan tasks, and find patterns in data. These tools feel natural now. Yet as their use expands, I often wonder how this growing reliance changes the way people relate to each other. I argue that AI can lift productivity and widen access, but unchecked dependence can thin real human connection. The goal is not to reject AI but to manage its place responsibly.</p>
-            <p>To begin, many people experience clear advantages. AI speeds up routine work by drafting notes, summarizing text, and suggesting ideas. It corrects grammar, organizes schedules, and identifies trends that support healthier choices. Lawson highlights these practical effects in daily communication, showing how AI supports productivity and creativity for ordinary users (Lawson). From my own experience, using AI to streamline tasks frees time for deeper work and more genuine conversations with others.</p>
-            <p>Beyond personal benefits, AI creates public value. In Southeast Asia, machine learning helps predict extreme weather, monitor forests, and reduce waste. Board documents these examples and notes that infrastructure challenges remain (Board). These projects show AI as a public good that strengthens safety and sustainability. When tools save lives and protect the environment, they earn their place in society.</p>
-            <p>However, these gains come with real costs. The European Parliamentary Research Service warns about surveillance, bias, and privacy loss. When organizations collect more data and automate decisions, unfairness can spread quickly. People who fear misuse may silence themselves, weakening open dialogue (European Parliamentary Research Service). Without careful oversight, the same tools that connect us can also erode trust.</p>
-            <p>In addition, excessive reliance on AI can weaken judgment. Students who let chatbots handle every problem lose practice in critical thinking. Managers who delegate feedback to digital assistants risk losing empathy. Russell and Norvig explain that intelligent behavior depends on context, something humans handle better than machines (Russell and Norvig). Delegating thought to AI can slowly reduce the very skills that make us human.</p>
-            <p>Some researchers take this concern further. They argue that large language models flood communication channels with fluent but unreliable text. Bender and colleagues call this the stochastic parrots problem. Systems that mimic understanding can amplify bias or distort information (Bender et al.). When confident language masks weak reasoning, it undermines truth and weakens civic trust.</p>
-            <p>Similarly, social observers warn about emotional distance. Turkle notes that technology often promises connection while encouraging isolation. People may substitute digital interaction for real dialogue (Turkle). AI could deepen this pattern by handling emotional communication for us. When we let systems draft apologies or condolences, we risk losing authenticity and the chance to practice empathy in real time.</p>
-            <p>However, some people may argue that the tools themselves are not the problem. Vincent claims that human choices, not algorithms, determine the outcome (Vincent). A meeting feels shallow only when leaders prioritize speed over care. A classroom loses depth when teachers avoid meaningful discussion. In this view, technology reflects values rather than erasing them. Still, design matters. If systems make it easy to replace human contact, most users will take that easier path.</p>
-            <p>Finding balance, therefore, becomes essential. We should use AI to enhance, not replace, human insight. Clear boundaries help. Allow AI to summarize information or automate small tasks, but reserve human input for ethical or emotional decisions. Label assisted content so readers understand its origin. This transparency maintains trust and accountability.</p>
-            <p>Moreover, protecting privacy must remain a priority. Limit data collection, secure storage, and audit models for fairness. The OECD urges transparency and human oversight as key safeguards (OECD). Rules like these sustain innovation by keeping it rooted in respect for people.</p>
-            <p>Equally important is preserving skill and empathy. Teams should hold real discussions for conflict, mentoring, and problem-solving. Students should practice independent writing before seeking digital help. These habits strengthen understanding and maintain the emotional intelligence that technology cannot replace.</p>
-            <p>Education offers the clearest path forward. Teachers can integrate AI responsibly by setting guidelines: allow brainstorming support but require original drafts. Encourage students to reflect on how they use AI and what they learn from it. Such practices teach accountability and ethical awareness alongside technical skill.</p>
-            <p>Public institutions must also adopt these principles. Use AI to improve safety, efficiency, and access, but keep humans accountable for moral and social decisions. Publish transparent model reports and invite public feedback. Treat citizens as partners rather than data points. Doing so builds trust and shared responsibility.</p>
-            <p>Ultimately, the goal is thoughtful balance. AI can extend human capacity and help solve global problems, yet it can also distance us from each other if used carelessly. The solution is not avoidance but awareness. By setting limits, protecting privacy, and valuing human judgment, we can ensure that AI strengthens rather than replaces our social bonds.</p>
+            <p>I use artificial intelligence every day. It helps me draft emails, plan tasks, and find patterns in data. These tools feel natural now. Yet as their use expands, I often wonder how this growing reliance changes the way people relate to one another. Artificial intelligence can lift productivity and widen access, but unchecked dependence may weaken real human connection. The goal is not to reject AI but to manage its place responsibly in modern life.</p>
+            <p>To understand the appeal of AI, it helps to look at its practical benefits. Many users rely on AI to complete repetitive tasks quickly and accurately. It drafts notes, summarizes information, and corrects grammar errors, saving people both time and frustration. Lawson highlights these effects, noting how AI enhances communication and creativity for everyday users (Lawson). From my experience, using AI to organize schedules and generate drafts frees mental space for deeper thought and more meaningful conversation. This efficiency represents one of the technology’s greatest strengths.</p>
+            <p>These personal advantages also extend to public good. In Southeast Asia, machine learning has improved weather prediction, forest monitoring, and waste management. Board documents these examples, showing that while infrastructure limits remain, the results prove promising (Board). Projects like these demonstrate how AI can serve as a global tool for safety, sustainability, and innovation. When systems prevent harm or protect natural resources, they validate their role as an ally to human progress.</p>
+            <p>However, these benefits are paired with serious ethical concerns. The European Parliamentary Research Service warns that unregulated AI use increases surveillance, bias, and privacy loss. As organizations automate decision-making, small biases can scale into widespread inequality. People who feel monitored may avoid open dialogue or creativity (European Parliamentary Research Service). In this way, technology that should empower users can instead suppress trust. Without oversight, the systems meant to connect us could divide us further.</p>
+            <p>Beyond issues of privacy, dependence on AI can erode critical thinking. Students who turn to chatbots for quick answers lose practice in analysis. Professionals who use digital assistants to write feedback risk losing empathy. Russell and Norvig explain that intelligent reasoning depends heavily on context, something machines still struggle to grasp (Russell and Norvig). When people outsource judgment to AI, they slowly lose the very skills that make human decision-making valuable.</p>
+            <p>Some experts argue this erosion extends to information itself. Bender and colleagues describe the “stochastic parrots” problem, where language models generate fluent but unreliable text (Bender et al.). While these systems mimic understanding, they often reproduce existing biases or errors. The result is polished writing without accuracy. When audiences cannot tell truth from imitation, civic understanding weakens. This confusion threatens democracy as much as individual learning.</p>
+            <p>Social scientists also warn that AI can widen emotional distance. Turkle observes that people increasingly substitute digital conversation for genuine connection (Turkle). AI could accelerate this by managing emotional exchanges on our behalf. For example, users can ask a chatbot to write apologies, compliments, or condolences. The words may be polite, but they lack the personal vulnerability that builds trust. Over time, emotional outsourcing could dull empathy and make real relationships harder to maintain.</p>
+            <p>Still, some believe that technology itself is not to blame. Vincent argues that human priorities shape AI outcomes, not the algorithms alone (Vincent). A meeting becomes shallow only when leaders value speed over care. A class discussion loses meaning only when students choose convenience over curiosity. This argument reminds us that design and use are inseparable. Developers and users share equal responsibility for ensuring that tools serve human well-being.</p>
+            <p>Balancing these views requires intention. People should use AI to enhance, not replace, human insight. Boundaries help preserve integrity. AI can summarize reports or automate data collection, but moral and creative choices should remain human. Clear labeling of AI-assisted content also protects transparency and accountability. When users know how information is produced, they can engage with it responsibly.</p>
+            <p>Protecting privacy is equally crucial. The OECD emphasizes transparency and human oversight as essential safeguards (OECD). Governments and corporations must restrict unnecessary data collection and enforce fairness audits for algorithms. Responsible regulation does not limit progress; it ensures that innovation remains ethical and sustainable. These standards keep AI grounded in respect for human dignity.</p>
+            <p>Just as systems need oversight, people need practice. Teams should reserve time for live problem-solving, debate, and mentorship. Students should write first drafts without AI before using it for revision. These steps preserve creativity and empathy. In both workplaces and classrooms, collaboration grows stronger when people rely on dialogue, not automation, to solve problems.</p>
+            <p>Education shows how balance can succeed. Teachers can integrate AI as a brainstorming aid while reinforcing original thought. Asking students to explain how AI shaped their work builds accountability and reflection. These habits teach digital ethics and reinforce the value of authenticity in writing and discussion. When guided carefully, AI becomes a tool for growth, not avoidance.</p>
+            <p>Public institutions face similar challenges. They can apply AI to improve public safety, manage infrastructure, and expand access to information. Yet human oversight must remain central. Publishing clear reports about how AI systems operate and inviting citizen feedback promote transparency. Treating the public as collaborators rather than subjects builds civic trust and ensures that innovation aligns with shared values.</p>
+            <p>In the end, the question is not whether AI helps or harms but how humans choose to use it. Artificial intelligence magnifies both our strengths and our weaknesses. It can expand knowledge, streamline systems, and improve lives. It can also reduce empathy, spread bias, and dull creativity if left unchecked. The future depends on our willingness to slow down, reflect, and stay accountable. By pairing efficiency with ethics, and curiosity with care, we can ensure that AI supports—not replaces—the human connection that defines us.</p>
           </article>
         </div>
       </section>
 
-      <!-- Reordered: Works Cited before Reflection -->
       <section id="works" role="tabpanel" aria-labelledby="tab-works">
         <div class="card">
           <h2>Works Cited</h2>
@@ -89,7 +78,7 @@
       <section id="reflection" role="tabpanel" aria-labelledby="tab-reflection">
         <div class="card">
           <h2>Reflection</h2>
-          <p>Writing this project taught me how to connect evidence, purpose, and audience into one sustained argument. At first, I saw research writing as formal and distant, but this project helped me see it as a process of choice and clarity. I had to decide what claim mattered, why readers should care, and how sources could guide reasoning without taking control of it. My goal was to balance analysis and simplicity so that the essay could read like a conversation about real consequences. Revision played the biggest role in growth. Early drafts felt mechanical. Later ones focused more on cause and effect, tone, and smooth transitions. I also learned to cut vague language and choose verbs that show intent. Citing sources correctly built credibility and rhythm. More than anything, I learned to treat writing as an act of thinking out loud, where each paragraph tests an idea against evidence. This reflection represents how ENC 1102 changed my understanding of writing from a grade-driven task to a form of inquiry and expression. It is about learning to write with both discipline and curiosity, which are the same skills that make responsible research possible.</p>
+          <p>Writing this project taught me how to connect evidence, purpose, and audience into one sustained argument. At first, I saw research writing as formal and distant, but ENC 1102 helped me see it as a process of choice and clarity. I had to decide what claim mattered, why readers should care, and how sources could guide reasoning without taking control of it. My goal was to balance analysis and simplicity so that the essay could read like a conversation about real consequences. Revision played the biggest role in growth. Early drafts felt mechanical. Later ones focused more on cause and effect, tone, and smooth transitions. I also learned to cut vague language and choose verbs that show intent. Citing sources correctly built credibility and rhythm. More than anything, I learned to treat writing as an act of thinking out loud, where each paragraph tests an idea against evidence. This reflection represents how ENC 1102 changed my understanding of writing from a grade-driven task to a form of inquiry and expression. It is about learning to write with both discipline and curiosity, which are the same skills that make responsible research possible.</p>
         </div>
       </section>
     </main>
